@@ -12,76 +12,79 @@
 <body class="bg-white text-gray-800">
 
   <!-- Navbar -->
-  <header class="fixed w-full bg-white shadow z-50">
+  <header class="fixed w-full bg-white shadow z-50 border-b border-blue-100">
     <nav class="max-w-7xl mx-auto flex justify-between items-center p-4">
-      <h1 class="text-2xl font-bold text-red-700">Haskurt Turizm</h1>
-      <button id="menu-btn" class="md:hidden focus:outline-none">
+      <img src="images/logo.png" alt="Haskurt Turizm Logo" class="w-36 h-auto">
+      <button id="menu-btn" class="md:hidden focus:outline-none text-blue-700">
         <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
           <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
             d="M4 6h16M4 12h16m-7 6h7" />
         </svg>
       </button>
       <ul id="menu" class="hidden md:flex gap-8 text-gray-700 font-medium">
-        <li><a href="#home" class="hover:text-red-700">Ana Sayfa</a></li>
-        <li><a href="#about" class="hover:text-red-700">Hakkımızda</a></li>
-        <li><a href="#services" class="hover:text-red-700">Hizmetler</a></li>
-        <li><a href="#contact" class="hover:text-red-700">İletişim</a></li>
+        <li><a href="#home" class="hover:text-blue-700">Ana Sayfa</a></li>
+        <li><a href="#about" class="hover:text-blue-700">Hakkımızda</a></li>
+        <li><a href="#services" class="hover:text-blue-700">Hizmetler</a></li>
+        <li><a href="#contact" class="hover:text-blue-700">İletişim</a></li>
       </ul>
     </nav>
     <!-- Mobil Menü -->
     <div id="mobile-menu" class="md:hidden hidden bg-white border-t">
       <ul class="flex flex-col items-center py-4 space-y-3 font-medium">
-        <li><a href="#home" class="hover:text-red-700">Ana Sayfa</a></li>
-        <li><a href="#about" class="hover:text-red-700">Hakkımızda</a></li>
-        <li><a href="#services" class="hover:text-red-700">Hizmetler</a></li>
-        <li><a href="#contact" class="hover:text-red-700">İletişim</a></li>
+        <li><a href="#home" class="hover:text-blue-700">Ana Sayfa</a></li>
+        <li><a href="#about" class="hover:text-blue-700">Hakkımızda</a></li>
+        <li><a href="#services" class="hover:text-blue-700">Hizmetler</a></li>
+        <li><a href="#contact" class="hover:text-blue-700">İletişim</a></li>
       </ul>
     </div>
   </header>
 
   <!-- Hero -->
-  <section id="home" class="pt-24 bg-gray-100">
+  <section id="home" class="pt-24 bg-blue-50">
     <div class="max-w-7xl mx-auto flex flex-col md:flex-row items-center px-6 py-16">
       <div class="flex-1 text-center md:text-left">
         <h2 class="text-4xl font-bold text-gray-900 mb-4">Güvenli ve Konforlu Taşımacılık</h2>
         <p class="text-lg text-gray-600 mb-6">Haskurt Turizm olarak personel, öğrenci ve özel servis taşımacılığında güvenilir çözümler sunuyoruz.</p>
-        <a href="#contact" class="bg-red-700 text-white px-6 py-3 rounded-full hover:bg-red-800 transition">İletişime Geç</a>
+        <a href="#contact" class="bg-blue-600 text-white px-6 py-3 rounded-full hover:bg-blue-700 transition">İletişime Geç</a>
       </div>
       <div class="flex-1 mt-8 md:mt-0">
-        <img src="images/logo.png" alt="Servis Aracı" class="rounded-2xl shadow-lg">
+        <img src="images/logo.png" alt="Haskurt Turizm" class="rounded-2xl shadow-lg">
       </div>
     </div>
   </section>
 
   <!-- About -->
-  <section id="about" class="py-16">
+  <section id="about" class="py-16 bg-gradient-to-r from-blue-50 to-blue-100">
     <div class="max-w-6xl mx-auto px-6 text-center">
-      <h3 class="text-3xl font-semibold text-red-700 mb-6">Hakkımızda</h3>
+      <h3 class="text-3xl font-semibold text-blue-700 mb-6">Hakkımızda</h3>
       <p class="text-gray-700 leading-relaxed max-w-3xl mx-auto">
         Haskurt Turizm, 2025 yılından bu yana güvenli, konforlu ve zamanında taşımacılık hizmeti sunan bir kuruluştur. 
         Deneyimli ekibimiz, bakımlı araç filomuz ve müşteri memnuniyetine dayalı hizmet anlayışımızla sektörde fark yaratıyoruz.
       </p>
+      <div class="mt-8">
+        <img src="images/service.jpeg" alt="Haskurt Filosu" class="rounded-2xl mx-auto shadow-lg max-h-96 object-cover">
+      </div>
     </div>
   </section>
 
   <!-- Services -->
-  <section id="services" class="bg-gray-50 py-16">
+  <section id="services" class="bg-white py-16">
     <div class="max-w-6xl mx-auto px-6 text-center">
-      <h3 class="text-3xl font-semibold text-red-700 mb-10">Hizmetlerimiz</h3>
+      <h3 class="text-3xl font-semibold text-blue-700 mb-10">Hizmetlerimiz</h3>
       <div class="grid md:grid-cols-3 gap-8">
-        <div class="bg-white shadow rounded-2xl p-6">
-          <img src="images/download.jpeg" class="rounded-xl mb-4">
-          <h4 class="text-xl font-semibold mb-2">Personel Taşımacılığı</h4>
+        <div class="bg-blue-50 hover:bg-blue-100 shadow rounded-2xl p-6 transition">
+          <img src="images/service2.jpeg" class="rounded-xl mb-4">
+          <h4 class="text-xl font-semibold mb-2 text-blue-800">Personel Taşımacılığı</h4>
           <p class="text-gray-600 text-sm">Kurumsal firmalar için zamanında ve güvenli personel servis hizmeti.</p>
         </div>
-        <div class="bg-white shadow rounded-2xl p-6">
-          <img src="https://images.unsplash.com/photo-1570129477492-45c003edd2be?auto=format&fit=crop&w=800&q=80" class="rounded-xl mb-4">
-          <h4 class="text-xl font-semibold mb-2">Öğrenci Servisi</h4>
+        <div class="bg-blue-50 hover:bg-blue-100 shadow rounded-2xl p-6 transition">
+          <img src="images/school.jpg" class="rounded-xl mb-4">
+          <h4 class="text-xl font-semibold mb-2 text-blue-800">Öğrenci Servisi</h4>
           <p class="text-gray-600 text-sm">Öğrenciler için konforlu, güvenli ve kontrollü taşımacılık hizmeti.</p>
         </div>
-        <div class="bg-white shadow rounded-2xl p-6">
-          <img src="https://images.unsplash.com/photo-1570129477501-9e4c37e3f4b3?auto=format&fit=crop&w=800&q=80" class="rounded-xl mb-4">
-          <h4 class="text-xl font-semibold mb-2">Özel Ulaşım</h4>
+        <div class="bg-blue-50 hover:bg-blue-100 shadow rounded-2xl p-6 transition">
+          <img src="images/service.jpeg" class="rounded-xl mb-4">
+          <h4 class="text-xl font-semibold mb-2 text-blue-800">Özel Ulaşım</h4>
           <p class="text-gray-600 text-sm">Toplantı, etkinlik ve özel organizasyonlar için özel araç kiralama hizmeti.</p>
         </div>
       </div>
@@ -89,21 +92,39 @@
   </section>
 
   <!-- Contact -->
-  <section id="contact" class="py-16">
+  <section id="contact" class="py-16 bg-blue-50">
     <div class="max-w-6xl mx-auto px-6 text-center">
-      <h3 class="text-3xl font-semibold text-red-700 mb-6">İletişim</h3>
-      <p class="text-gray-700 mb-8">Bizimle iletişime geçin, ihtiyaçlarınıza özel çözümler sunalım.</p>
-      <form class="max-w-lg mx-auto bg-gray-50 p-6 rounded-2xl shadow">
-        <input type="text" placeholder="Ad Soyad" class="w-full p-3 mb-4 rounded border" required>
-        <input type="email" placeholder="E-posta" class="w-full p-3 mb-4 rounded border" required>
-        <textarea placeholder="Mesajınız" class="w-full p-3 mb-4 rounded border" rows="4" required></textarea>
-        <button type="submit" class="bg-red-700 text-white px-6 py-3 rounded-full hover:bg-red-800 transition">Gönder</button>
-      </form>
+      <h3 class="text-3xl font-semibold text-blue-700 mb-6">İletişim</h3>
+      <p class="text-gray-700 mb-8">Bizimle iletişime geçin, ihtiyaçlarınıza çözümler sunalım.</p>
+
+      <div class="grid md:grid-cols-2 gap-10">
+        <!-- Form -->
+        <form class="bg-white p-6 rounded-2xl shadow">
+          <input type="text" placeholder="Ad Soyad" class="w-full p-3 mb-4 rounded border" required>
+          <input type="email" placeholder="E-posta" class="w-full p-3 mb-4 rounded border" required>
+          <textarea placeholder="Mesajınız" class="w-full p-3 mb-4 rounded border" rows="4" required></textarea>
+          <button type="submit" class="bg-blue-600 text-white px-6 py-3 rounded-full hover:bg-blue-700 transition">Gönder</button>
+        </form>
+
+        <!-- Contact Info -->
+        <div class="text-left md:text-left flex flex-col justify-center">
+          <h4 class="text-xl font-semibold text-blue-800 mb-4">İletişim Bilgilerimiz</h4>
+          <p class="flex items-center gap-2 text-gray-700 mb-2">
+            📞 <span>+90 555 123 45 67</span>
+          </p>
+          <p class="flex items-center gap-2 text-gray-700 mb-2">
+            ✉️ <span>info@haskurtturizm.com</span>
+          </p>
+          <p class="flex items-center gap-2 text-gray-700">
+            📍 <span>Gebze, Kocaeli / Türkiye</span>
+          </p>
+        </div>
+      </div>
     </div>
   </section>
 
   <!-- Footer -->
-  <footer class="bg-gray-900 text-white py-6 text-center">
+  <footer class="bg-blue-900 text-white py-6 text-center">
     <p>© 2025 Haskurt Turizm | Tüm Hakları Saklıdır</p>
   </footer>
 
@@ -117,5 +138,3 @@
 
 </body>
 </html>
-
-
