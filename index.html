@@ -38,14 +38,19 @@
 
   <!-- Navbar -->
   <header class="fixed w-full bg-white shadow-sm z-50 border-b border-blue-100 custom-navbar">
-  <nav class="max-w-7xl mx-auto flex justify-between items-center px-4">
-    <img src="images/logo.png" alt="Haskurt Turizm Logo" class="w-36 h-auto">
+  <nav class="max-w-7xl mx-auto flex justify-between items-center px-4 py-2">
+    <!-- Logo -->
+    <img src="images/logo.png" alt="Haskurt Turizm Logo" class="w-32 h-auto">
+
+    <!-- Menü butonu (mobil) -->
     <button id="menu-btn" class="md:hidden focus:outline-none text-blue-700">
       <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
           d="M4 6h16M4 12h16m-7 6h7" />
       </svg>
     </button>
+
+    <!-- Menü -->
     <ul id="menu" class="hidden md:flex gap-8 text-gray-700 font-medium">
       <li><a href="#home" class="hover:text-blue-700">Ana Sayfa</a></li>
       <li><a href="#about" class="hover:text-blue-700">Hakkımızda</a></li>
@@ -53,18 +58,16 @@
       <li><a href="#contact" class="hover:text-blue-700">İletişim</a></li>
     </ul>
   </nav>
+
+  <!-- Mobil menü -->
+  <ul id="mobile-menu" class="hidden flex-col items-center bg-white shadow-md border-t border-blue-100 md:hidden text-gray-700 font-medium">
+    <li class="py-2"><a href="#home" class="hover:text-blue-700">Ana Sayfa</a></li>
+    <li class="py-2"><a href="#about" class="hover:text-blue-700">Hakkımızda</a></li>
+    <li class="py-2"><a href="#services" class="hover:text-blue-700">Hizmetler</a></li>
+    <li class="py-2"><a href="#contact" class="hover:text-blue-700">İletişim</a></li>
+  </ul>
 </header>
 
-  <!-- Hero -->
-  <section id="home" class="bg-blue-50 pt-28 md:pt-32">
-    <div class="max-w-7xl mx-auto flex flex-col md:flex-row items-center px-6 py-16">
-      <div class="flex-1 text-center md:text-left">
-        <h2 class="text-4xl font-bold text-gray-900 mb-4">Güvenli ve Konforlu Taşımacılık</h2>
-        <p class="text-lg text-gray-600 mb-6">Haskurt Turizm olarak personel, öğrenci ve özel servis taşımacılığında güvenilir çözümler sunuyoruz.</p>
-        <a href="#contact" class="bg-blue-600 text-white px-6 py-3 rounded-full hover:bg-blue-700 transition">İletişime Geç</a>
-      </div>
-    </div>
-  </section>
 
   <!-- About -->
   <section id="about" class="py-16 bg-gradient-to-r from-blue-50 to-blue-100">
@@ -183,6 +186,7 @@
 
 </body>
 </html>
+
 
 
 
