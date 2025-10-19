@@ -7,37 +7,32 @@
   <script src="https://cdn.tailwindcss.com"></script>
   <style>
     html { scroll-behavior: smooth; }
+    .custom-navbar nav {
+    padding-top: 4px;
+    padding-bottom: 4px;
+  }
   </style>
 </head>
 <body class="bg-white text-gray-800">
 
   <!-- Navbar -->
-  <header class="fixed w-full bg-white shadow z-50 border-b border-blue-100">
-    <nav class="max-w-7xl mx-auto flex justify-between items-center py-0.5 px-4">
-      <img src="images/logo.png" alt="Haskurt Turizm Logo" class="w-36 h-auto">
-      <button id="menu-btn" class="md:hidden focus:outline-none text-blue-700">
-        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-            d="M4 6h16M4 12h16m-7 6h7" />
-        </svg>
-      </button>
-      <ul id="menu" class="hidden md:flex gap-8 text-gray-700 font-medium">
-        <li><a href="#home" class="hover:text-blue-700">Ana Sayfa</a></li>
-        <li><a href="#about" class="hover:text-blue-700">Hakkımızda</a></li>
-        <li><a href="#services" class="hover:text-blue-700">Hizmetler</a></li>
-        <li><a href="#contact" class="hover:text-blue-700">İletişim</a></li>
-      </ul>
-    </nav>
-    <!-- Mobil Menü -->
-    <div id="mobile-menu" class="md:hidden hidden bg-white border-t">
-      <ul class="flex flex-col items-center py-4 space-y-3 font-medium">
-        <li><a href="#home" class="hover:text-blue-700">Ana Sayfa</a></li>
-        <li><a href="#about" class="hover:text-blue-700">Hakkımızda</a></li>
-        <li><a href="#services" class="hover:text-blue-700">Hizmetler</a></li>
-        <li><a href="#contact" class="hover:text-blue-700">İletişim</a></li>
-      </ul>
-    </div>
-  </header>
+  <header class="fixed w-full bg-white shadow-sm z-50 border-b border-blue-100 custom-navbar">
+  <nav class="max-w-7xl mx-auto flex justify-between items-center px-4">
+    <img src="images/logo.png" alt="Haskurt Turizm Logo" class="w-36 h-auto">
+    <button id="menu-btn" class="md:hidden focus:outline-none text-blue-700">
+      <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+          d="M4 6h16M4 12h16m-7 6h7" />
+      </svg>
+    </button>
+    <ul id="menu" class="hidden md:flex gap-8 text-gray-700 font-medium">
+      <li><a href="#home" class="hover:text-blue-700">Ana Sayfa</a></li>
+      <li><a href="#about" class="hover:text-blue-700">Hakkımızda</a></li>
+      <li><a href="#services" class="hover:text-blue-700">Hizmetler</a></li>
+      <li><a href="#contact" class="hover:text-blue-700">İletişim</a></li>
+    </ul>
+  </nav>
+</header>
 
   <!-- Hero -->
   <section id="home" class="bg-blue-50 pt-28 md:pt-32">
@@ -167,6 +162,7 @@
 
 </body>
 </html>
+
 
 
 
