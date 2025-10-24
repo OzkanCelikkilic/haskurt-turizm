@@ -1,213 +1,223 @@
 <!DOCTYPE html>
 <html lang="tr">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Haskurt Turizm</title>
-  <script src="https://cdn.tailwindcss.com"></script>
-  <style>
-      html { scroll-behavior: smooth; }
-
-  /* Navbar yüksekliğini inceltir */
-  .custom-navbar nav {
-    padding-top: 2px;
-    padding-bottom: 2px;
-    line-height: 1; /* satır yüksekliğini sıfırlar */
-    min-height: 50px; /* barın maksimum yüksekliği */
-  }
-
-  /* Navbar içindeki öğelerin dikey hizalamasını düzelt */
-  .custom-navbar img {
-    max-height: 80px; /* logoyu barın içine sığdır */
-  }
-
-  .custom-navbar ul li a {
-    line-height: 1.2;
-  }
-
-  /* Mobil menü butonu hizalansın */
-  #menu-btn {
-    padding: 0;
-    margin: 0;
-    display: flex;
-    align-items: center;
-  }
-  </style>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Haskurt Turizm | Güvenli ve Konforlu Taşımacılık Çözümleri</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
 </head>
-<body class="bg-white text-gray-800">
+<body>
 
-  <!-- Navbar -->
-  <header class="fixed w-full bg-white shadow-sm z-50 border-b border-blue-100 custom-navbar">
-  <nav class="max-w-7xl mx-auto flex justify-between items-center px-4 py-2">
+    <header class="navbar-container">
+        <nav class="navbar max-width">
+            <a href="#home" class="logo-area">
+                <img src="images/logo.png" alt="Haskurt Turizm Logo" class="logo-img">
+            </a>
+
+            <ul id="menu" class="desktop-menu">
+                <li><a href="#home">Ana Sayfa</a></li>
+                <li><a href="#about">Hakkımızda</a></li>
+                <li><a href="#services">Hizmetler</a></li>
+                <li><a href="#quality">Kalite Politikamız</a></li>
+                <li><a href="#contact" class="cta-link">İletişim & Teklif</a></li>
+            </ul>
+
+            <button id="menu-btn" class="menu-btn" aria-label="Menüyü Aç">
+                <i class="fas fa-bars"></i>
+            </button>
+        </nav>
+
+        <ul id="mobile-menu" class="mobile-menu hidden">
+            <li><a href="#home">Ana Sayfa</a></li>
+            <li><a href="#about">Hakkımızda</a></li>
+            <li><a href="#services">Hizmetler</a></li>
+            <li><a href="#quality">Kalite Politikamız</a></li>
+            <li><a href="#contact">İletişim & Teklif</a></li>
+        </ul>
+    </header>
+
+
+    <section id="home" class="hero-section">
+        <div class="hero-overlay">
+            <div class="max-width hero-content">
+                <h1>Güvenle Taşır, Konforla Ulaştırırız.</h1>
+                <p>Personel ve öğrenci taşımacılığında güvenli, teknolojik ve dakik çözümlerle sektörde fark yaratıyoruz.</p>
+                <div class="hero-cta-group">
+                    <a href="#services" class="btn btn-primary">Hizmetlerimizi İncele <i class="fas fa-arrow-right"></i></a>
+                    <a href="tel:+905384315903" class="btn btn-secondary">Hemen Ara: +90 538 431 59 03</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="about" class="section-padding about-section">
+        <div class="max-width section-content-grid">
+            <div class="text-content">
+                <span class="subheading">KURUMSAL DENEYİM</span>
+                <h2>40 Yılı Aşkın Güven ve Kalite Geleneği</h2>
+                <p>Haskurt Turizm, 40 yılı aşkın tecrübesiyle bölgenin önde gelen taşımacılık firmalarından biridir. Sektördeki bilgi birikimimizi, dinamik ve genç filomuzla birleştirerek, müşterilerimizin taleplerine en hızlı ve en güvenilir çözümleri sunmayı ilke edindik. Faaliyetlerimizde **%100 müşteri memnuniyetini**, **maksimum güvenliği** ve **çevreye saygıyı** temel alıyoruz. Kurumsal taşımacılıkta yeni nesil çözümlerin adresi olmak için çalışıyoruz.</p>
+                <a href="#quality" class="text-link">Kalite Belgelerimizi Görüntüle <i class="fas fa-certificate"></i></a>
+            </div>
+            <div class="image-content">
+                <img src="images/service.jpeg" alt="Haskurt Filosu" class="rounded-img shadow-lg">
+            </div>
+        </div>
+    </section>
+
+    <section id="services" class="section-padding bg-light">
+        <div class="max-width text-center">
+            <span class="subheading">ÇÖZÜM ORTAĞINIZ</span>
+            <h2>Size Özel Taşımacılık Hizmetleri</h2>
+            
+            <div class="service-grid">
+                <div class="service-card">
+                    <i class="fas fa-users icon-blue"></i>
+                    <h3>Personel Taşımacılığı</h3>
+                    <p>Kurumsal firmaların en değerli kaynağı olan personelini, en yüksek konfor ve güvenlik standartlarıyla zamanında işlerine ulaştırıyoruz.</p>
+                    <a href="#contact" class="btn-small">Teklif Al</a>
+                </div>
+                <div class="service-card">
+                    <i class="fas fa-school icon-blue"></i>
+                    <h3>Öğrenci Servisi</h3>
+                    <p>Öğrencilerimiz için güvenli, takip edilebilir ve hijyenik araçlarla, ailelerin gönül rahatlığıyla tercih ettiği hizmeti sunuyoruz.</p>
+                    <a href="#contact" class="btn-small">Teklif Al</a>
+                </div>
+                <div class="service-card">
+                    <i class="fas fa-car-side icon-blue"></i>
+                    <h3>Özel Ulaşım & Transfer</h3>
+                    <p>Toplantı, kongre, seminer ve özel VIP transferleriniz için şoförlü lüks araç kiralama hizmetleri sunuyoruz.</p>
+                    <a href="#contact" class="btn-small">Teklif Al</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="quality" class="section-padding">
+        <div class="max-width text-center">
+            <span class="subheading">FARK YARATAN STANDARTLARIMIZ</span>
+            <h2>Taşımacılıkta Güven ve Kalite Farkı</h2>
+
+            <div class="quality-grid">
+                <div class="quality-item">
+                    <div class="icon-circle"><i class="fas fa-shield-alt"></i></div>
+                    <h3>Yüksek Güvenlik</h3>
+                    <p>5 yıllık tecrübeye sahip profesyonel şoförler.</p>
+                </div>
+                <div class="quality-item">
+                    <div class="icon-circle"><i class="fas fa-bus"></i></div>
+                    <h3>Modern Filo</h3>
+                    <p>Ortalama yaş 5'in altında olan, konforlu, klimalı ve donanımlı araçlar.</p>
+                </div>
+                <div class="quality-item">
+                    <div class="icon-circle"><i class="fas fa-map-marked-alt"></i></div>
+                    <h3>Rota Optimizasyonu</h3>
+                    <p>En kısa ve en dakik ulaşım güzergahları.</p>
+                </div>
+                <div class="quality-item">
+                    <div class="icon-circle"><i class="fas fa-headset"></i></div>
+                    <h3>7/24 Destek</h3>
+                    <p>Operasyonel aksaklıklara anında çözüm üreten kesintisiz çağrı merkezi desteği.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="section-padding bg-dark contact-section">
+        <div class="max-width contact-layout">
+            
+            <div class="contact-info">
+                <h2>Bize Ulaşın ve Teklif Alın</h2>
+                <p>İhtiyaçlarınız için en uygun ve en ekonomik çözümleri sunmaya hazırız. Hemen iletişime geçin.</p>
+                
+                <ul class="contact-details">
+                    <li><i class="fas fa-phone-alt"></i> <a href="tel:+905384315903">+90 538 431 59 03</a></li>
+                    <li><i class="fas fa-envelope"></i> <a href="mailto:info@haskurtturizm.com">info@haskurtturizm.com</a></li>
+                    <li><i class="fas fa-map-marker-alt"></i> Çayırova, Kocaeli / Türkiye</li>
+                </ul>
+
+                <div class="social-links">
+                    <a href="#" target="_blank" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#" target="_blank" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                    <a href="#" target="_blank" aria-label="Linkedin"><i class="fab fa-linkedin-in"></i></a>
+                </div>
+            </div>
+
+            <form class="contact-form shadow-lg">
+                <h3>Hızlı Teklif Formu</h3>
+                <input type="text" placeholder="Ad Soyad *" required>
+                <input type="email" placeholder="E-posta *" required>
+                <input type="tel" placeholder="Telefon Numarası *" required>
+                <select required>
+                    <option value="">İhtiyaç Duyduğunuz Hizmet</option>
+                    <option value="personel">Personel Taşımacılığı</option>
+                    <option value="ogrenci">Öğrenci Servisi</option>
+                    <option value="ozel">Özel Ulaşım / Transfer</option>
+                </select>
+                <textarea placeholder="Detaylı Mesajınız" rows="4"></textarea>
+                <button type="submit" class="btn btn-submit">Teklif İste</button>
+            </form>
+        </div>
+    </section>
+
+    <section class="map-section">
+        <div class="map-container">
+            <iframe
+                src="https://www.google.com/maps/embed?pb=!1m17!1m12!1m3!1d188.73145103741575!2d29.383938407687374!3d40.8125151028451!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m2!1m1!2zNDDCsDQ4JzQ1LjQiTiAyOcKwMjMnMDEuOSJF!5e0!3m2!1str!2str!4v1760707050039!5m2!1str!2str"
+                width="100%"
+                height="450"
+                style="border:0;"
+                allowfullscreen=""
+                loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade">
+            </iframe>
+        </div>
+        <div class="max-width map-cta-area">
+             <a href="https://www.google.com/maps/dir/?api=1&destination=40.812515,29.383938" target="_blank" class="btn btn-map">
+                <i class="fas fa-directions"></i> Yol Tarifi Al
+            </a>
+        </div>
+    </section>
+
     
-    <!-- Logo -->
-    <div class="flex items-center">
-      <img src="images/logo.png" alt="Haskurt Turizm Logo" class="h-16 w-auto">
-    </div>
-
-    <!-- Menü butonu (sadece mobilde görünür) -->
-    <button id="menu-btn" class="lg:hidden block focus:outline-none text-blue-700">
-      <svg class="w-7 h-7" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-          d="M4 6h16M4 12h16m-7 6h7" />
-      </svg>
-    </button>
-
-    <!-- Masaüstü Menü -->
-    <ul id="menu" class="hidden md:flex gap-8 text-gray-700 font-medium">
-      <li><a href="#home" class="hover:text-blue-700">Ana Sayfa</a></li>
-      <li><a href="#about" class="hover:text-blue-700">Hakkımızda</a></li>
-      <li><a href="#services" class="hover:text-blue-700">Hizmetler</a></li>
-      <li><a href="#contact" class="hover:text-blue-700">İletişim</a></li>
-    </ul>
-  </nav>
-
-  <!-- Mobil Menü -->
-  <ul id="mobile-menu" class="hidden flex-col bg-white shadow-md border-t border-blue-100 md:hidden text-gray-700 font-medium pl-4">
-    <li class="py-2"><a href="#home" class="hover:text-blue-700">  Ana Sayfa</a></li>
-    <li class="py-2"><a href="#about" class="hover:text-blue-700">  Hakkımızda</a></li>
-    <li class="py-2"><a href="#services" class="hover:text-blue-700">  Hizmetler</a></li>
-    <li class="py-2"><a href="#contact" class="hover:text-blue-700">  İletişim</a></li>
-  </ul>
-</header>
-
-
-  <!-- About -->
-  <section id="about" class="py-16 bg-gradient-to-r from-blue-50 to-blue-100">
-    <div class="max-w-6xl mx-auto px-6 text-center">
-      <h3 class="text-3xl font-semibold text-blue-700 mb-6">Hakkımızda</h3>
-      <p class="text-gray-700 leading-relaxed max-w-3xl mx-auto">
-        Haskurt Turizm, 2025 yılından bu yana güvenli, konforlu ve zamanında taşımacılık hizmeti sunan bir kuruluştur. 
-        Deneyimli ekibimiz, bakımlı araç filomuz ve müşteri memnuniyetine dayalı hizmet anlayışımızla sektörde fark yaratıyoruz.
-      </p>
-      <div class="mt-8">
-        <img src="images/service.jpeg" alt="Haskurt Filosu" class="rounded-2xl mx-auto shadow-lg max-h-96 object-cover">
-      </div>
-    </div>
-  </section>
-
-  <!-- Services -->
-  <section id="services" class="bg-white py-16">
-    <div class="max-w-6xl mx-auto px-6 text-center">
-      <h3 class="text-3xl font-semibold text-blue-700 mb-10">Hizmetler</h3>
-      <div class="grid md:grid-cols-3 gap-8">
-        <div class="bg-blue-50 hover:bg-blue-100 shadow rounded-2xl p-6 transition">
-          <img src="images/service2.jpeg" class="rounded-xl mb-4">
-          <h4 class="text-xl font-semibold mb-2 text-blue-800">Personel Taşımacılığı</h4>
-          <p class="text-gray-600 text-sm">Kurumsal firmalar için zamanında ve güvenli personel servis hizmeti.</p>
+    <footer class="footer">
+        <div class="max-width footer-content">
+            <p>&copy; 2025 Haskurt Turizm. Tüm Hakları Saklıdır.</p>
+            <p><a href="#">Gizlilik Politikası</a> | <a href="#">KVKK</a></p>
         </div>
-        <div class="bg-blue-50 hover:bg-blue-100 shadow rounded-2xl p-6 transition">
-          <img src="images/school.jpg" class="rounded-xl mb-4">
-          <h4 class="text-xl font-semibold mb-2 text-blue-800">Öğrenci Servisi</h4>
-          <p class="text-gray-600 text-sm">Öğrenciler için konforlu, güvenli ve kontrollü taşımacılık hizmeti.</p>
-        </div>
-        <div class="bg-blue-50 hover:bg-blue-100 shadow rounded-2xl p-6 transition">
-          <img src="images/service.jpeg" class="rounded-xl mb-4">
-          <h4 class="text-xl font-semibold mb-2 text-blue-800">Özel Ulaşım</h4>
-          <p class="text-gray-600 text-sm">Toplantı, etkinlik ve özel organizasyonlar için özel araç kiralama hizmeti.</p>
-        </div>
-      </div>
-    </div>
-  </section>
+    </footer>
 
-  <!-- Contact -->
-  <section id="contact" class="py-16 bg-blue-50">
-    <div class="max-w-6xl mx-auto px-6 text-center">
-      <h3 class="text-3xl font-semibold text-blue-700 mb-6">İletişim</h3>
-      <p class="text-gray-700 mb-8">Bizimle iletişime geçin, ihtiyaçlarınıza çözümler sunalım.</p>
+    <script>
+        const btn = document.getElementById('menu-btn');
+        const mobileMenu = document.getElementById('mobile-menu');
+        const mobileLinks = mobileMenu.querySelectorAll('a');
+        const navbar = document.querySelector('.navbar-container');
 
-      <div class="grid md:grid-cols-2 gap-10">
-        <!-- Form -->
-        <form class="bg-white p-6 rounded-2xl shadow">
-          <input type="text" placeholder="Ad Soyad" class="w-full p-3 mb-4 rounded border" required>
-          <input type="email" placeholder="E-posta" class="w-full p-3 mb-4 rounded border" required>
-          <textarea placeholder="Mesajınız" class="w-full p-3 mb-4 rounded border" rows="4" required></textarea>
-          <button type="submit" class="bg-blue-600 text-white px-6 py-3 rounded-full hover:bg-blue-700 transition">Gönder</button>
-        </form>
+        // Mobil menü açma/kapama
+        btn.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+            btn.querySelector('i').classList.toggle('fa-bars');
+            btn.querySelector('i').classList.toggle('fa-times'); // İkonu X ile değiştir
+        });
 
-        <!-- Contact Info -->
-        <div class="text-left md:text-left flex flex-col justify-center">
-          <h4 class="text-xl font-semibold text-blue-800 mb-4">İletişim Bilgilerimiz</h4>
-          <p class="flex items-center gap-2 text-gray-700 mb-2">
-            📞 <a href="tel:+905551234567" class="hover:underline">+90 555 123 45 67</a>
-          </p>
-          <p class="flex items-center gap-2 text-gray-700 mb-2">
-            ✉️ <a href="mailto:info@haskurtturizm.com" class="hover:underline">info@haskurtturizm.com</a>
-          </p>
-          <p class="flex items-center gap-2 text-gray-700">
-            📍 <span>Çayırova, Kocaeli / Türkiye</span>
-          </p>
-        </div>
-      </div>
-    </div>
-  </section>
+        // Linke tıklandığında menüyü kapat
+        mobileLinks.forEach(link => {
+            link.addEventListener('click', () => {
+                mobileMenu.classList.add('hidden');
+                btn.querySelector('i').classList.remove('fa-times');
+                btn.querySelector('i').classList.add('fa-bars');
+            });
+        });
 
-<!-- Google Maps -->
-<section class="bg-blue-50">
-  <div class="max-w-6xl mx-auto px-6 py-10 text-center">
-    <h3 class="text-2xl font-semibold text-blue-700 mb-4 flex justify-center items-center gap-2">
-      <!-- Animasyonlu konum ikonu -->
-      <span class="text-3xl animate-bounce">📍</span> 
-      Konumumuz
-    </h3>
-
-    <div class="rounded-2xl overflow-hidden shadow-lg mb-6">
-      <iframe
-        src="https://www.google.com/maps/embed?pb=!1m17!1m12!1m3!1d188.73145103741575!2d29.383938407687374!3d40.8125151028451!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m2!1m1!2zNDDCsDQ4JzQ1LjQiTiAyOcKwMjMnMDEuOSJF!5e0!3m2!1str!2str!4v1760707050039!5m2!1str!2str"
-        width="100%"
-        height="400"
-        style="border:0;"
-        allowfullscreen=""
-        loading="lazy"
-        referrerpolicy="no-referrer-when-downgrade">
-      </iframe>
-    </div>
-
-    <!-- Yol Tarifi Butonu -->
-    <a 
-      href="https://www.google.com/maps/dir/?api=1&destination=40.812515,29.383938" 
-      target="_blank"
-      class="inline-block bg-blue-600 hover:bg-blue-700 text-white px-6 py-3 rounded-full shadow transition duration-200">
-      🚗 Yol Tarifi Al
-    </a>
-  </div>
-</section>
-
-  
-  <!-- Footer -->
-  <footer class="bg-blue-900 text-white py-6 text-center">
-    <p>© 2025 Haskurt Turizm | Tüm Hakları Saklıdır</p>
-  </footer>
-
-  <script>
-    const btn = document.getElementById('menu-btn');
-    const mobileMenu = document.getElementById('mobile-menu');
-    btn.addEventListener('click', () => {
-      mobileMenu.classList.toggle('hidden');
-    });
-  </script>
+        // Scroll'da Navbar Rengi Değiştirme (Vesta tarzı)
+        window.addEventListener('scroll', () => {
+            if (window.scrollY > 50) {
+                navbar.classList.add('scrolled');
+            } else {
+                navbar.classList.remove('scrolled');
+            }
+        });
+    </script>
 
 </body>
 </html>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
