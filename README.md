@@ -1,2 +1,2 @@
-# haskurt-turizm
-HASKURT Turizm web sitesi
+# rast-turizm
+RAST Turizm web site
