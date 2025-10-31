@@ -145,16 +145,16 @@
 
             <form class="contact-form shadow-lg" action="https://formspree.io/f/mqagyona" method="POST">
                 <h3>Hızlı Teklif Formu</h3>
-                <input type="text" placeholder="Ad Soyad *" required>
-                <input type="email" placeholder="E-posta *" required>
-                <input type="tel" placeholder="Telefon Numarası *" required>
-                <select required>
+                <input type="text" placeholder="Ad Soyad *" required name="ad_soyad">
+                <input type="email" placeholder="E-posta *" required name="eposta">
+                <input type="tel" placeholder="Telefon Numarası *" required name="telefon">
+                <select required name="hizmet">
                     <option value="">İhtiyaç Duyduğunuz Hizmet</option>
                     <option value="personel">Personel Taşımacılığı</option>
                     <option value="ogrenci">Öğrenci Servisi</option>
                     <option value="ozel">Özel Ulaşım / Transfer</option>
                 </select>
-                <textarea placeholder="Detaylı Mesajınız" rows="4"></textarea>
+                <textarea placeholder="Detaylı Mesajınız" rows="4" name="mesaj"></textarea>
                 <button type="submit" class="btn btn-submit">Teklif İste</button>
             </form>
         </div>
