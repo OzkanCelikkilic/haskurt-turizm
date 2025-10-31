@@ -16,7 +16,7 @@
 html {
     scroll-behavior: smooth;
     /* Sabit Navbar'ın içeriği örtmesini engeller */
-    scroll-padding-top: 90px;
+    scroll-padding-top: 100px;
 }
 
 body {
@@ -145,7 +145,9 @@ h2 {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    min-height: 80px;
+    /* İnce Navbar Yüksekliği */
+    min-height: 70px;
+    transition: all 0.3s;
 }
 
 .logo-area {
@@ -154,8 +156,12 @@ h2 {
 }
 
 .logo-img {
-    height: 60px;
+    /* Logonun istenen büyük boyutu */
+    height: 150px;
     width: auto;
+    /* Logoyu yukarı doğru iterek 70px'lik navbar'dan bağımsız hale getiririz */
+    margin-top: -15px; 
+    transition: height 0.3s, margin-top 0.3s;
 }
 
 .desktop-menu {
@@ -175,17 +181,18 @@ h2 {
     color: #0099DD;
 }
 
-.cta-link {
-    background-color: #0099DD;
-    color: #fff;
-    padding: 8px 18px;
-    border-radius: 5px;
-    font-weight: 700;
+/* Scroll Durumunda Küçülme */
+.navbar-container.scrolled .navbar {
+    /* Scroll olduğunda navbar biraz daha incelir */
+    min-height: 60px;
 }
-.cta-link:hover {
-    background-color: #16366D;
-    color: #fff;
+.navbar-container.scrolled .logo-area .logo-img {
+    /* Scroll olduğunda logoyu küçült (Örn: 60px) ve normal akışa döndür */
+    height: 80px;
+    margin-top: 0;
 }
+
+
 
 /* Mobil Menü */
 .menu-btn {
